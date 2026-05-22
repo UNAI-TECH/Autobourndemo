@@ -1,0 +1,6 @@
+{
+  "name": "AutoBourn",
+  "description": "AutoBourn - Hyper-Luxury Automotive Showroom and Interactive 360 Configurator",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
