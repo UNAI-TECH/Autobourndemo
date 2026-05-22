@@ -11,7 +11,7 @@ import Configurator from "./components/Configurator";
 export default function App() {
   // If set to model ID, full-screen immersive custom config is engaged
   const [studioCarId, setStudioCarId] = useState<string | null>(null);
-  
+
   // Toggles active chat overlay directly from global actions
   const [conciergeChatState, setConciergeChatState] = useState(false);
 
@@ -34,9 +34,9 @@ export default function App() {
     <div className="bg-[#050505] text-[#EAEAEA] font-inter min-h-screen selection:bg-[#D4AF37] selection:text-black relative">
       {/* Immersive 360 Studio Mode Override Overlay Toggle */}
       {studioCarId ? (
-        <Configurator 
-          initialCarId={studioCarId} 
-          onClose={() => setStudioCarId(null)} 
+        <Configurator
+          initialCarId={studioCarId}
+          onClose={() => setStudioCarId(null)}
         />
       ) : (
         <>
@@ -62,6 +62,7 @@ export default function App() {
 
             {/* VIP Concierge Service & Chat backed by server-side Gemini */}
             <Concierge chatOpenByDefault={conciergeChatState} />
+
 
             {/* Sourced Secure inquiry form & Accordion FAQs */}
             <ContactForm />
